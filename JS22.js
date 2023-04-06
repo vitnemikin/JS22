@@ -53,13 +53,31 @@ function switchAnswer(event){
 	}else {
 		thirdAnswer.style.display = "block";
 		thirdAnswer.style.color = "#008B8B";
-	}
+  }
+  
+  // VN: Хочу предложить более лаконичный принцип для выбора формы:
+  /*
+    let answer;
+    if (totalSum < 9) {
+        answer = {selector: ".firstAnswer", color: "#9932CC"};
+    } else if (totalSum >= 9 && totalSum <= 14){
+        answer = {selector: ".secondAnswer", color: "#4682B4"};
+    } else {
+        answer = {selector: ".thirdAnswer", color: "#008B8B"};
+    }
+
+    let answerForm = document.querySelector(answer.selector);
+    answerForm.style.color = answer.color;
+    answerForm.style.display = "block";
+  */
+ // И всё-таки, цвета для форм лучше вынести в css
 }
 
 
 
 
 //Это моя функция которую я хочу разобрать позже! не обращайте на нее внимание!
+// VN: Хорошо)
 
 // function tabChange() {
   // let formActive = document.querySelector('.active');
